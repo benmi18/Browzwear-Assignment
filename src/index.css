@@ -1,10 +1,17 @@
 /************************ GLOBAL *************************/
+html {
+  height: 100%;
+}
 body {
   display: flex;
+  height: 100%;
+  margin: 0;
   font-size: 22px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(45, 48, 45);
+  justify-content: center;
+  align-items: center;
 }
 
 /************************ MAIN APP COMPONENT *************************/
