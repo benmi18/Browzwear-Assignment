@@ -3,11 +3,13 @@ import { connect } from "react-redux";
 
 // COULD NOT FIND THE SOLUTION TO SHOW THE COMPANY ADDRRES IN THE G-MAPS EMBED
 class GoogleMap extends Component {
-  mapUrl = "https://www.google.com/maps/embed?pb=" + this.props.state.initMap;
   render() {
+    const mapUrl = `https://maps.google.com/maps?q=${
+      this.props.state.initMap
+    }&t=&z=17&ie=UTF8&iwloc=&output=embed`;
     return (
       <div className="googleMap">
-        <iframe src={this.mapUrl} title="google map" />
+        <iframe src={mapUrl} title="google map" />
       </div>
     );
   }
