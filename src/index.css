@@ -6,7 +6,7 @@ body {
   display: flex;
   height: 100%;
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(45, 48, 45);
@@ -27,7 +27,7 @@ body {
 .App .activeCountry,
 .App .activeCity,
 .App .activeCompany {
-  background-color: rgb(41, 41, 243);
+  background-color: #3575d3;
   color: white;
 }
 
@@ -84,7 +84,7 @@ body {
 .countries,
 .cities,
 .company {
-  overflow: auto;
+  overflow-y: scroll;
   margin-top: 5px;
 }
 
@@ -95,6 +95,6 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  color: rgb(41, 41, 243);
+  color: #3575d3;
   border-radius: 5px;
 }
